@@ -200,17 +200,26 @@ header {
   z-index: 2;
 }
 
+/* Badge container */
+.badge {
+  display: flex;
+  flex-wrap: wrap;  
+  gap: 8px;
+  justify-content: center;
+}
+
 /* Badge styling */
 .badge span {
-  margin: 0 6px; 
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;   
   border-radius: 50px; 
-  background: rgba(255, 255, 255, 0.5); /* white semi-transparent for contrast */
+  background: rgba(255, 255, 255, 0.5);
   font-weight: 700; 
-  color: #6a1b9a; /* dark purple */
-  font-size: 16px;
+  color: #6a1b9a;
+  font-size: 1rem;        
   backdrop-filter: blur(5px);
+  white-space: nowrap;     
 }
+
 
 /* Main title */
 h1 {
@@ -778,4 +787,3 @@ unlockBtn.addEventListener('click', () => {
   </script>
 </body>
 </html>
-
